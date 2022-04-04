@@ -13,7 +13,7 @@ const CryptoCurrencis = () => {
   useEffect(() => {
     setCoins(result);
     const filteredCoins = result?.filter((coin) =>
-      coin.name.toLowerCase().includes(searchItem)
+      coin?.name?.toLowerCase().includes(searchItem)
     );
     setCoins(filteredCoins);
   }, [coinList, result, searchItem]);
