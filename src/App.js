@@ -14,7 +14,7 @@ import {
 const App = () => {
   return (
     <main className="bg-dark-blue font-rubik ">
-      <div className="mx-4 md:mx-20 pb-10">
+      <div className="mx-4 md:mx-10 pb-10">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
