@@ -23,19 +23,19 @@ const HomePage = () => {
   }
   return (
     <section>
-      <div className="flex flex-col md:flex-row justify-between">
+      <div className="flex flex-col md:flex-row justify-between gap-x">
         <div className="w-full md:w-96 md:mt-24 text-primary-2">
           <h1 className="text-4xl md:text-5xl text-primary-1">
             Fastest & secure platform to get information about crypto
           </h1>
           <p className="text-sm mt-4">
-            make your cryptocurrency investment decision base on our
-            information. trusted by over 100k customres with over $10 million in
+            Make your cryptocurrency investment decision based on our
+            information. Trusted by over 100k customers with over $10 million in
             investment made.
           </p>
         </div>
         <div>
-          <img src="images/illustration.png" alt="" className="" />
+          <img src="images/illustration.png" alt="" className=" md:w-96 md:h-96" />
         </div>
       </div>
       <div className="text-primary-2 capitalize border-b-2 pb-2">

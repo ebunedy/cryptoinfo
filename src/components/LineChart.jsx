@@ -32,11 +32,11 @@ const LineChart = ({ coinHistory, currentPrice, coinName, change }) => {
   );
 
   const data = {
-    labels: cryptoTimestamp.slice(0, 20),
+    labels: cryptoTimestamp.slice(0, 40),
     datasets: [
       {
         label: "Price In USD",
-        data: cryptoPrice.slice(0, 20),
+        data: cryptoPrice.slice(0, 40),
         fill: "false",
         backgroundColor: "#0D0D2B",
         borderColor: "#0D0D2B",
@@ -75,7 +75,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName, change }) => {
         </h3>
         Current {coinName} Price: $ {Number(currentPrice).toFixed(2)}
       </div>
-      <Line data={data} options={options} />
+      <Line data={data} options={options} height={"80%"} width={"100%"} />
     </>
   );
 };
