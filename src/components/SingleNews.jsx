@@ -5,7 +5,7 @@ const SingleNews = ({ newsList }) => {
   const demoImage =
     "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
   return (
-    <div className="flex flex-col md:flex-row gap-5 flex-wrap ">
+    <div className="flex flex-col md:flex-row gap-5 flex-wrap justify-evenly">
       {newsList?.map((news, index) => {
         const { url, name, description, image, provider, datePublished } = news;
         return (

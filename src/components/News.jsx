@@ -15,7 +15,7 @@ const News = () => {
   }
   return (
     <div>
-      <h1 className="text-2xl md:text-4xl mt-10 mb-8 text-center text-light-green capitalize">
+      <h1 className="text-2xl md:text-4xl mb-2 text-center text-light-green capitalize">
         major cryptocurrency headlines
       </h1>
       <SingleNews newsList={result.value} />

@@ -24,7 +24,7 @@ const HomePage = () => {
   return (
     <section>
       <div className="flex flex-col md:flex-row justify-between">
-        <div className="w-full md:w-96 mt-24 text-primary-2">
+        <div className="w-full md:w-96 md:mt-24 text-primary-2">
           <h1 className="text-4xl md:text-5xl text-primary-1">
             Fastest & secure platform to get information about crypto
           </h1>
