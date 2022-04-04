@@ -10,6 +10,7 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import millify from "millify";
 
 const LineChart = ({ coinHistory, currentPrice, coinName, change }) => {
   const cryptoPrice = [];
@@ -73,7 +74,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName, change }) => {
             {change}
           </span>
         </h3>
-        Current {coinName} Price: $ {currentPrice}
+        Current {coinName} Price: $ {Number(currentPrice).toFixed(2)}
       </div>
       <Line data={data} options={options} />
     </>
