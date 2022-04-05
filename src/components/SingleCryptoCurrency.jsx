@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SingleCryptoCurrency = ({ coinList }) => {
   return (
-    <div className="flex  flex-col md:flex-row flex-wrap md:gap-x-20 text-primary-2">
+    <div className="flex  flex-col md:flex-row flex-wrap md:gap-x-10 text-primary-2">
       {coinList?.map((coins) => {
         const { uuid, name, symbol, change, iconUrl, price, marketCap } = coins;
         return (
