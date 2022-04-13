@@ -5,11 +5,11 @@ const SingleNews = ({ newsList }) => {
   const demoImage =
     "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";
   return (
-    <div className="flex flex-col md:flex-row gap-y-5 flex-wrap gap-x-20">
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-6 ">
       {newsList?.map((news, index) => {
         const { url, name, description, image, provider, datePublished } = news;
         return (
-          <div key={index + datePublished} className="max-w-sm md:max-w-xl h-auto md:h-80 rounded shadow-lg bg-primary-3 text-primary-2 bg-opacity-20 ">
+          <div key={index + datePublished} className="max-w-sm md:max-w-xl h-auto md:h-auto rounded shadow-lg bg-primary-3 text-primary-2 bg-opacity-20 ">
             <div className="flex justify-between">
               <img
                 className="w-32 h-36 md:h-32"
@@ -34,16 +34,16 @@ const SingleNews = ({ newsList }) => {
                 </a>
               </span>
             </div>
-            <div className="px-4 pt-2 pb-2 flex items-center justify-between">
+            <div className="px-4 pt-2 pb-2 grid grid-cols-3 place-items-stretch gap-6 md:gap-4">
               <img
-                className="w-14 h-14 rounded-full bg-dark-blue"
+                className="w-14 h-14 rounded-full bg-dark-blue self-end"
                 src={provider[0].image?.thumbnail?.contentUrl || demoImage}
                 alt="Sunset in the mountains"
               />
-              <span className="inline-block  rounded-full px-2 py-1 text-sm font-semibold text-light-green mr-2 mb-2">
+              <span className="inline-block self-end rounded-full  text-sm font-semibold text-light-green mr-2 mb-2">
                 {provider[0].name}
               </span>
-              <span className="inline-block rounded-full px-2 py-1 text-sm font-semibold text-light-green mr-2 mb-2">
+              <span className="inline-block self-end rounded-full text-sm font-semibold text-light-green mr-2 mb-2">
                 {moment(datePublished).startOf("ss").fromNow()}
               </span>
             </div>

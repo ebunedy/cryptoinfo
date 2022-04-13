@@ -49,7 +49,7 @@ const CryptoCurrencis = () => {
           `}
         />
       </div>
-      <h1 className="text-2xl md:text-3xl text-center text-light-green capitalize">
+      <h1 className="text-2xl md:text-3xl text-center text-light-green capitalize mt-3">
         {`${
           coins?.length > 0
             ? "list of cryptocurrencies"

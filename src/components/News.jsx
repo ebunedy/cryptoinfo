@@ -5,7 +5,7 @@ import Loader from "./Loader";
 import Error from "./Error";
 
 const News = () => {
-  const { data: result, isError, isFetching } = useGetNewsCategoryQuery(22);
+  const { data: result, isError, isFetching } = useGetNewsCategoryQuery(24);
   if (isFetching) {
     return <Loader />;
   }
@@ -15,7 +15,7 @@ const News = () => {
   }
   return (
     <div>
-      <h1 className="text-2xl md:text-4xl mb-2 text-center text-light-green capitalize">
+      <h1 className="text-2xl md:text-4xl mb-4 text-center text-light-green capitalize">
         major cryptocurrency headlines
       </h1>
       <SingleNews newsList={result.value} />

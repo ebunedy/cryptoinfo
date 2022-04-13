@@ -23,8 +23,8 @@ const HomePage = () => {
   }
   return (
     <section>
-      <div className="flex flex-col md:flex-row justify-between gap-x">
-        <div className="w-full md:w-96 md:mt-24 text-primary-2">
+      <div className="grid md:grid-cols-2 grid-cols-1">
+        <div className=" md:mt-24 text-primary-2 lg:self-center">
           <h1 className="text-4xl md:text-5xl text-primary-1">
             Fastest & secure platform to get information about crypto
           </h1>
@@ -35,10 +35,10 @@ const HomePage = () => {
           </p>
         </div>
         <div>
-          <img src="images/illustration.png" alt="" className=" md:w-96 md:h-96" />
+          <img src="images/illustration.png" alt="" className=" " />
         </div>
       </div>
-      <div className="text-primary-2 capitalize border-b-2 pb-2">
+      <div className="text-primary-2 capitalize border-b-2 pb-2 mt-6">
         <h1 className="text-3xl text-primary-1">global cryptocurrency stats</h1>
         <div className="flex flex-wrap justify-between ">
           <p className="mt-4">total Coins: {millify(stats?.total)}</p>
