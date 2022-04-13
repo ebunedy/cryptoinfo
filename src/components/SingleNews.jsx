@@ -9,7 +9,7 @@ const SingleNews = ({ newsList }) => {
       {newsList?.map((news, index) => {
         const { url, name, description, image, provider, datePublished } = news;
         return (
-          <div key={index + datePublished} className="max-w-sm md:max-w-xl h-auto md:h-auto rounded shadow-lg bg-primary-3 text-primary-2 bg-opacity-20 ">
+          <div key={index + datePublished} className=" rounded shadow-lg bg-primary-3 text-primary-2 bg-opacity-20 ">
             <div className="flex justify-between">
               <img
                 className="w-32 h-36 md:h-32"
