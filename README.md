@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# A crypto Info App Built  Using React.
+### Live app [here](https://crypto-io.netlify.app)
 
 ## Available Scripts
 
